@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Homepage from './Homepage';
+import Example1 from './Components/example1/Example1';
+import Example3 from './Components/example3/Example3';
+import Pyramid3D from './Components/example4/Pyramid3D';
+import Example2 from './Components/example2/Example2';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Router>
+      <div className="w-screen h-screen flex flex-col items-center justify-center bg-gray-100">
+        <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/example1" element={<Example1/>} />
+        <Route path="/example2" element={<Example2/>} />
+        <Route path="/example3" element={<Example3/>} />
+        <Route path="/example4" element={<Pyramid3D/>} />
 
+
+
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 export default App;
