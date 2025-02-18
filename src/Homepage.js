@@ -10,6 +10,8 @@ const Homepage = () => {
         <Link to="/example2" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full sm:w-auto text-center">Example 2</Link>
         <Link to="/example3" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full sm:w-auto text-center">Example 3</Link>
         <Link to="/example4" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full sm:w-auto text-center">Example 4</Link>
+        <Link to="/example5" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-full sm:w-auto text-center">Example 5</Link>
+
       </div>
     </div>
   );

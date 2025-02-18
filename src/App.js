@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Homepage from './Homepage';
 import Example1 from './Components/example1/Example1';
 import Example3 from './Components/example3/Example3';
-import Pyramid3D from './Components/example4/Pyramid3D';
+// import Pyramid3D from './Components/example4/Pyramid3D';
 import Example2 from './Components/example2/Example2';
+import Example5 from './Components/example5/Example5';
+import Example4 from './Components/example4/Example4';
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
         <Route path="/example1" element={<Example1/>} />
         <Route path="/example2" element={<Example2/>} />
         <Route path="/example3" element={<Example3/>} />
-        <Route path="/example4" element={<Pyramid3D/>} />
+        <Route path="/example4" element={<Example4/>} />
+
+        <Route path="/example5" element={<Example5/>} />
 
 
 

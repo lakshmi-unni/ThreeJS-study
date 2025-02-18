@@ -1,13 +1,17 @@
-// Example4.js
-import React from 'react';
-import Pyramid3D from './Pyramid3D';
+import { Canvas } from '@react-three/fiber'
+import React from 'react'
+import BoxModel from './BoxModel'
 
 const Example4 = () => {
   return (
-    <div>
-      <Pyramid3D />
-    </div>
-  );
-};
+    <>
+    <Canvas>
+        <BoxModel/>
 
-export default Example4;
+    </Canvas>
+    </>
+
+)
+}
+
+export default Example4
